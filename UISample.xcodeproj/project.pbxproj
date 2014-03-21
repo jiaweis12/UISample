@@ -57,9 +57,9 @@
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32DBCF750370BD2300C91783 /* DropPlot_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropPlot_Prefix.pch; sourceTree = "<group>"; };
+		32DBCF750370BD2300C91783 /* UISample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISample_Prefix.pch; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D15AC370486D014006FF6A4 /* DropPlot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropPlot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D15AC370486D014006FF6A4 /* UISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBE3B8918DC817700FCDAFE /* CorePlot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CorePlot.framework; sourceTree = "<group>"; };
 		BC00E6470FE1BF0A00DE81E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BC93AAF40FDF3F0200606226 /* NSString+ParseCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ParseCSV.h"; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		19C28FB0FE9D524F11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D15AC370486D014006FF6A4 /* DropPlot.app */,
+				8D15AC370486D014006FF6A4 /* UISample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32DBCF750370BD2300C91783 /* DropPlot_Prefix.pch */,
+				32DBCF750370BD2300C91783 /* UISample_Prefix.pch */,
 				2A37F4B0FDCFA73011CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -172,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D15AC270486D014006FF6A4 /* DropPlot */ = {
+		8D15AC270486D014006FF6A4 /* UISample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "DropPlot" */;
+			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "UISample" */;
 			buildPhases = (
 				8D15AC2B0486D014006FF6A4 /* Resources */,
 				BC93AACD0FDF339400606226 /* Copy Frameworks */,
@@ -186,10 +186,10 @@
 			);
 			dependencies = (
 			);
-			name = DropPlot;
+			name = UISample;
 			productInstallPath = "$(HOME)/Applications";
 			productName = DropPlot;
-			productReference = 8D15AC370486D014006FF6A4 /* DropPlot.app */;
+			productReference = 8D15AC370486D014006FF6A4 /* UISample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +200,7 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 			};
-			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "DropPlot" */;
+			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "UISample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -214,7 +214,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D15AC270486D014006FF6A4 /* DropPlot */,
+				8D15AC270486D014006FF6A4 /* UISample */,
 			);
 		};
 /* End PBXProject section */
@@ -294,7 +294,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DropPlot_Prefix.pch;
+				GCC_PREFIX_HEADER = UISample_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
@@ -302,7 +302,7 @@
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = DropPlot;
+				PRODUCT_NAME = UISample;
 			};
 			name = Debug;
 		};
@@ -315,7 +315,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DropPlot_Prefix.pch;
+				GCC_PREFIX_HEADER = UISample_Prefix.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -324,7 +324,7 @@
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = DropPlot;
+				PRODUCT_NAME = UISample;
 			};
 			name = Release;
 		};
@@ -361,7 +361,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "DropPlot" */ = {
+		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "UISample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C05733C808A9546B00998B17 /* Debug */,
@@ -370,7 +370,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "DropPlot" */ = {
+		C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "UISample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C05733CC08A9546B00998B17 /* Debug */,
