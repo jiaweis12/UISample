@@ -14,6 +14,13 @@
 		8D15AC310486D014006FF6A4 /* CPTPlotDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* CPTPlotDocument.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		9D46B00E18DC9E590077227D /* PlotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D46B00D18DC9E590077227D /* PlotItem.m */; };
+		9D46B01118DC9E850077227D /* RealTimePlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D46B01018DC9E850077227D /* RealTimePlot.m */; };
+		9D46B01418DC9F0A0077227D /* PlotGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D46B01318DC9F0A0077227D /* PlotGallery.m */; };
+		9D46B01618DCA0B00077227D /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D46B01518DCA0B00077227D /* Quartz.framework */; };
+		9D46B01918DCB3CA0077227D /* PlotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D46B01818DCB3CA0077227D /* PlotView.m */; };
+		9D46B01C18DCB5450077227D /* Plot_MacAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D46B01B18DCB5450077227D /* Plot_MacAppDelegate.m */; };
+		9D46B01F18DCB7560077227D /* PlotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D46B01E18DCB7560077227D /* PlotController.m */; };
 		9DBE3B8A18DC817700FCDAFE /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBE3B8918DC817700FCDAFE /* CorePlot.framework */; };
 		9DBE3B8B18DC818900FCDAFE /* CorePlot.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBE3B8918DC817700FCDAFE /* CorePlot.framework */; };
 		BC00E6480FE1BF0A00DE81E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC00E6470FE1BF0A00DE81E0 /* QuartzCore.framework */; };
@@ -60,6 +67,19 @@
 		32DBCF750370BD2300C91783 /* UISample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISample_Prefix.pch; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* UISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D46B00C18DC9E590077227D /* PlotItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotItem.h; sourceTree = "<group>"; };
+		9D46B00D18DC9E590077227D /* PlotItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotItem.m; sourceTree = "<group>"; };
+		9D46B00F18DC9E850077227D /* RealTimePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealTimePlot.h; sourceTree = "<group>"; };
+		9D46B01018DC9E850077227D /* RealTimePlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealTimePlot.m; sourceTree = "<group>"; };
+		9D46B01218DC9F0A0077227D /* PlotGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotGallery.h; sourceTree = "<group>"; };
+		9D46B01318DC9F0A0077227D /* PlotGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotGallery.m; sourceTree = "<group>"; };
+		9D46B01518DCA0B00077227D /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		9D46B01718DCB3CA0077227D /* PlotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotView.h; sourceTree = "<group>"; };
+		9D46B01818DCB3CA0077227D /* PlotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotView.m; sourceTree = "<group>"; };
+		9D46B01A18DCB5450077227D /* Plot_MacAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plot_MacAppDelegate.h; sourceTree = "<group>"; };
+		9D46B01B18DCB5450077227D /* Plot_MacAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plot_MacAppDelegate.m; sourceTree = "<group>"; };
+		9D46B01D18DCB7560077227D /* PlotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotController.h; sourceTree = "<group>"; };
+		9D46B01E18DCB7560077227D /* PlotController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotController.m; sourceTree = "<group>"; };
 		9DBE3B8918DC817700FCDAFE /* CorePlot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CorePlot.framework; sourceTree = "<group>"; };
 		BC00E6470FE1BF0A00DE81E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BC93AAF40FDF3F0200606226 /* NSString+ParseCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ParseCSV.h"; sourceTree = "<group>"; };
@@ -73,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D46B01618DCA0B00077227D /* Quartz.framework in Frameworks */,
 				9DBE3B8A18DC817700FCDAFE /* CorePlot.framework in Frameworks */,
 				D720C91418DBD9D4003B49FE /* Accelerate.framework in Frameworks */,
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
@@ -128,6 +149,18 @@
 		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9D46B01D18DCB7560077227D /* PlotController.h */,
+				9D46B01E18DCB7560077227D /* PlotController.m */,
+				9D46B01A18DCB5450077227D /* Plot_MacAppDelegate.h */,
+				9D46B01B18DCB5450077227D /* Plot_MacAppDelegate.m */,
+				9D46B01718DCB3CA0077227D /* PlotView.h */,
+				9D46B01818DCB3CA0077227D /* PlotView.m */,
+				9D46B01218DC9F0A0077227D /* PlotGallery.h */,
+				9D46B01318DC9F0A0077227D /* PlotGallery.m */,
+				9D46B00F18DC9E850077227D /* RealTimePlot.h */,
+				9D46B01018DC9E850077227D /* RealTimePlot.m */,
+				9D46B00C18DC9E590077227D /* PlotItem.h */,
+				9D46B00D18DC9E590077227D /* PlotItem.m */,
 				2A37F4AEFDCFA73011CA2CEA /* CPTPlotDocument.h */,
 				2A37F4ACFDCFA73011CA2CEA /* CPTPlotDocument.m */,
 				BC93AAF40FDF3F0200606226 /* NSString+ParseCSV.h */,
@@ -161,6 +194,7 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D46B01518DCA0B00077227D /* Quartz.framework */,
 				9DBE3B8918DC817700FCDAFE /* CorePlot.framework */,
 				D720C91318DBD9D4003B49FE /* Accelerate.framework */,
 				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
@@ -239,9 +273,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D46B01918DCB3CA0077227D /* PlotView.m in Sources */,
+				9D46B01118DC9E850077227D /* RealTimePlot.m in Sources */,
+				9D46B01F18DCB7560077227D /* PlotController.m in Sources */,
+				9D46B01C18DCB5450077227D /* Plot_MacAppDelegate.m in Sources */,
 				8D15AC310486D014006FF6A4 /* CPTPlotDocument.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				9D46B01418DC9F0A0077227D /* PlotGallery.m in Sources */,
 				BC93AAF60FDF3F0200606226 /* NSString+ParseCSV.m in Sources */,
+				9D46B00E18DC9E590077227D /* PlotItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
