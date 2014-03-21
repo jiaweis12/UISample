@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D79F8443-5F2A-4EB5-B950-283F1AF84766</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DropPlot</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B06C02DD-93F0-4C98-83BF-7DD78610832E</key>
+		<string>https://github.com/veecnn/UISample.git</string>
+		<key>D5AC3B65-D9B6-4D40-BF3E-7BDE4CDAD41E</key>
+		<string>https://github.com/core-plot/core-plot.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DropPlot.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B06C02DD-93F0-4C98-83BF-7DD78610832E</key>
+		<string>../..</string>
+		<key>D5AC3B65-D9B6-4D40-BF3E-7BDE4CDAD41E</key>
+		<string>../../../core-plot</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/veecnn/UISample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B06C02DD-93F0-4C98-83BF-7DD78610832E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D5AC3B65-D9B6-4D40-BF3E-7BDE4CDAD41E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>core-plot</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B06C02DD-93F0-4C98-83BF-7DD78610832E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UISample</string>
+		</dict>
+	</array>
+</dict>
+</plist>
