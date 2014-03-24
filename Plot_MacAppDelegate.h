@@ -7,13 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <IOBluetooth/IOBluetooth.h>
+#import "UARTPeripheral.h"
 
-@interface Plot_MacAppDelegate : NSObject<NSApplicationDelegate>
+@interface Plot_MacAppDelegate : NSObject<NSApplicationDelegate, CBCentralManagerDelegate, UARTPeripheralDelegate>
 {
     @private
     NSWindow *window;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+
+- (IBAction)connect:(id)sender;
 
 @end
