@@ -18,6 +18,7 @@
 		9D46B01618DCA0B00077227D /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D46B01518DCA0B00077227D /* Quartz.framework */; };
 		9D46B01918DCB3CA0077227D /* PlotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D46B01818DCB3CA0077227D /* PlotView.m */; };
 		9D46B01F18DCB7560077227D /* PlotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D46B01E18DCB7560077227D /* PlotController.m */; };
+		9D9F087918E0B12B002A7709 /* Plot_MacAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D46B01B18DCB5450077227D /* Plot_MacAppDelegate.m */; };
 		9DBE3B8A18DC817700FCDAFE /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBE3B8918DC817700FCDAFE /* CorePlot.framework */; };
 		9DBE3B8B18DC818900FCDAFE /* CorePlot.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBE3B8918DC817700FCDAFE /* CorePlot.framework */; };
 		BC00E6480FE1BF0A00DE81E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC00E6470FE1BF0A00DE81E0 /* QuartzCore.framework */; };
@@ -278,6 +279,7 @@
 				9D46B01918DCB3CA0077227D /* PlotView.m in Sources */,
 				DEEC103518E0826300ABA401 /* UARTPeripheral.m in Sources */,
 				9D46B01118DC9E850077227D /* RealTimePlot.m in Sources */,
+				9D9F087918E0B12B002A7709 /* Plot_MacAppDelegate.m in Sources */,
 				9D46B01F18DCB7560077227D /* PlotController.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				9D46B01418DC9F0A0077227D /* PlotGallery.m in Sources */,
