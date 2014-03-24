@@ -27,6 +27,9 @@
 		BC93AAF60FDF3F0200606226 /* NSString+ParseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = BC93AAF50FDF3F0200606226 /* NSString+ParseCSV.m */; };
 		BCFD32AE0FEF08EA00A5B71C /* CorePlotIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BCFD32AD0FEF08EA00A5B71C /* CorePlotIcon.icns */; };
 		D720C91418DBD9D4003B49FE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D720C91318DBD9D4003B49FE /* Accelerate.framework */; };
+		DE87CC0C18E0224D007CE20B /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE87CC0B18E0224D007CE20B /* IOBluetooth.framework */; };
+		DE87CC0E18E02257007CE20B /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE87CC0D18E02257007CE20B /* IOBluetoothUI.framework */; };
+		DEEC103518E0826300ABA401 /* UARTPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEC103418E0826300ABA401 /* UARTPeripheral.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +89,10 @@
 		BC93AAF50FDF3F0200606226 /* NSString+ParseCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ParseCSV.m"; sourceTree = "<group>"; };
 		BCFD32AD0FEF08EA00A5B71C /* CorePlotIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CorePlotIcon.icns; sourceTree = "<group>"; };
 		D720C91318DBD9D4003B49FE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		DE87CC0B18E0224D007CE20B /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		DE87CC0D18E02257007CE20B /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
+		DEEC103318E0826300ABA401 /* UARTPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UARTPeripheral.h; sourceTree = "<group>"; };
+		DEEC103418E0826300ABA401 /* UARTPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UARTPeripheral.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE87CC0E18E02257007CE20B /* IOBluetoothUI.framework in Frameworks */,
+				DE87CC0C18E0224D007CE20B /* IOBluetooth.framework in Frameworks */,
 				9D46B01618DCA0B00077227D /* Quartz.framework in Frameworks */,
 				9DBE3B8A18DC817700FCDAFE /* CorePlot.framework in Frameworks */,
 				D720C91418DBD9D4003B49FE /* Accelerate.framework in Frameworks */,
@@ -149,6 +158,8 @@
 		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DEEC103318E0826300ABA401 /* UARTPeripheral.h */,
+				DEEC103418E0826300ABA401 /* UARTPeripheral.m */,
 				9D46B01D18DCB7560077227D /* PlotController.h */,
 				9D46B01E18DCB7560077227D /* PlotController.m */,
 				9D46B01A18DCB5450077227D /* Plot_MacAppDelegate.h */,
@@ -194,6 +205,8 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE87CC0D18E02257007CE20B /* IOBluetoothUI.framework */,
+				DE87CC0B18E0224D007CE20B /* IOBluetooth.framework */,
 				9D46B01518DCA0B00077227D /* Quartz.framework */,
 				9DBE3B8918DC817700FCDAFE /* CorePlot.framework */,
 				D720C91318DBD9D4003B49FE /* Accelerate.framework */,
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D46B01918DCB3CA0077227D /* PlotView.m in Sources */,
+				DEEC103518E0826300ABA401 /* UARTPeripheral.m in Sources */,
 				9D46B01118DC9E850077227D /* RealTimePlot.m in Sources */,
 				9D46B01F18DCB7560077227D /* PlotController.m in Sources */,
 				9D46B01C18DCB5450077227D /* Plot_MacAppDelegate.m in Sources */,
