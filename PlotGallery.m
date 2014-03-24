@@ -57,24 +57,24 @@ static PlotGallery *sharedPlotGallery = nil;
     return self;
 }
 
--(id)retain
-{
-    return self;
-}
-
--(NSUInteger)retainCount
-{
-    return UINT_MAX;
-}
-
--(oneway void)release
-{
-}
-
--(id)autorelease
-{
-    return self;
-}
+//-(id)retain
+//{
+//    return self;
+//}
+//
+//-(NSUInteger)retainCount
+//{
+//    return UINT_MAX;
+//}
+//
+//-(oneway void)release
+//{
+//}
+//
+//-(id)autorelease
+//{
+//    return self;
+//}
 
 -(void)addPlotItem:(PlotItem *)plotItem
 {

@@ -28,7 +28,7 @@
     NSString *currentThemeName;
 }
 
-@property (nonatomic, retain) PlotItem *plotItem;
+@property (nonatomic, strong) PlotItem *plotItem;
 @property (nonatomic, copy) NSString *currentThemeName;
 
 -(IBAction)themeSelectionDidChange:(id)sender;

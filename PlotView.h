@@ -20,6 +20,6 @@
     id<PlotViewDelegate> delegate;
 }
 
-@property (nonatomic, retain) id<PlotViewDelegate> delegate;
+@property (nonatomic, strong) id<PlotViewDelegate> delegate;
 
 @end
