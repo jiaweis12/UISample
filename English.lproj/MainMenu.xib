@@ -543,7 +543,6 @@
                 <autoresizingMask key="autoresizingMask"/>
             </view>
         </window>
-        <customObject id="D9I-Rv-uUP" userLabel="Plot Mac App Delegate" customClass="Plot_MacAppDelegate"/>
         <customObject id="H5R-mS-daI" userLabel="Plot Controller" customClass="PlotController">
             <connections>
                 <outlet property="hostingView" destination="Ha5-Mt-zxY" id="eb2-Ns-LF2"/>
