@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DDD582C0DA1D0D100B32029 /* CPTPlotDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* CPTPlotDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
@@ -22,7 +21,6 @@
 		9DBE3B8A18DC817700FCDAFE /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBE3B8918DC817700FCDAFE /* CorePlot.framework */; };
 		9DBE3B8B18DC818900FCDAFE /* CorePlot.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBE3B8918DC817700FCDAFE /* CorePlot.framework */; };
 		BC00E6480FE1BF0A00DE81E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC00E6470FE1BF0A00DE81E0 /* QuartzCore.framework */; };
-		BC93AAF60FDF3F0200606226 /* NSString+ParseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = BC93AAF50FDF3F0200606226 /* NSString+ParseCSV.m */; };
 		BCFD32AE0FEF08EA00A5B71C /* CorePlotIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BCFD32AD0FEF08EA00A5B71C /* CorePlotIcon.icns */; };
 		D720C91418DBD9D4003B49FE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D720C91318DBD9D4003B49FE /* Accelerate.framework */; };
 		DE87CC0C18E0224D007CE20B /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE87CC0B18E0224D007CE20B /* IOBluetooth.framework */; };
@@ -57,10 +55,7 @@
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		1DDD58290DA1D0D100B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/CPTPlotDocument.xib; sourceTree = "<group>"; };
 		1DDD582B0DA1D0D100B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		2A37F4ACFDCFA73011CA2CEA /* CPTPlotDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTPlotDocument.m; sourceTree = "<group>"; };
-		2A37F4AEFDCFA73011CA2CEA /* CPTPlotDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotDocument.h; sourceTree = "<group>"; };
 		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
@@ -170,8 +165,6 @@
 				9D46B01018DC9E850077227D /* RealTimePlot.m */,
 				9D46B00C18DC9E590077227D /* PlotItem.h */,
 				9D46B00D18DC9E590077227D /* PlotItem.m */,
-				2A37F4AEFDCFA73011CA2CEA /* CPTPlotDocument.h */,
-				2A37F4ACFDCFA73011CA2CEA /* CPTPlotDocument.m */,
 				BC93AAF40FDF3F0200606226 /* NSString+ParseCSV.h */,
 				BC93AAF50FDF3F0200606226 /* NSString+ParseCSV.m */,
 			);
@@ -194,7 +187,6 @@
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
 				8D15AC360486D014006FF6A4 /* Info.plist */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
-				1DDD58280DA1D0D100B32029 /* CPTPlotDocument.xib */,
 				1DDD582A0DA1D0D100B32029 /* MainMenu.xib */,
 			);
 			name = Resources;
@@ -271,7 +263,6 @@
 			files = (
 				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
-				1DDD582C0DA1D0D100B32029 /* CPTPlotDocument.xib in Resources */,
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
 				BCFD32AE0FEF08EA00A5B71C /* CorePlotIcon.icns in Resources */,
 			);
@@ -290,7 +281,6 @@
 				9D46B01F18DCB7560077227D /* PlotController.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				9D46B01418DC9F0A0077227D /* PlotGallery.m in Sources */,
-				BC93AAF60FDF3F0200606226 /* NSString+ParseCSV.m in Sources */,
 				9D46B00E18DC9E590077227D /* PlotItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,14 +294,6 @@
 				089C1660FE840EACC02AAC07 /* English */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1DDD58280DA1D0D100B32029 /* CPTPlotDocument.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1DDD58290DA1D0D100B32029 /* English */,
-			);
-			name = CPTPlotDocument.xib;
 			sourceTree = "<group>";
 		};
 		1DDD582A0DA1D0D100B32029 /* MainMenu.xib */ = {
