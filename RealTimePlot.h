@@ -4,6 +4,8 @@
 //
 
 #import "PlotItem.h"
+#import <IOBluetooth/IOBluetooth.h>
+#import "UARTPeripheral.h"
 
 @interface RealTimePlot : PlotItem<CPTPlotDataSource>
 {
@@ -13,6 +15,9 @@
     NSTimer *dataTimer;
 }
 
+
+
 -(void)newData:(NSTimer *)theTimer;
+
 
 @end

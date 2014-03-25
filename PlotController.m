@@ -7,6 +7,8 @@
 //
 
 #import "PlotController.h"
+#import "BLEDataTracker.h"
+#import "Header.h"
 
 #import "dlfcn.h"
 //#define EMBED_NU	1
@@ -21,6 +23,35 @@ const CGFloat CPT_SPLIT_VIEW_MIN_LHS_WIDTH = 150.0;
 @dynamic plotItem;
 @synthesize currentThemeName;
 
+- (void) centralManagerDidUpdateState:(CBCentralManager *)central
+{
+    if (central.state == CBCentralManagerStatePoweredOn)
+    {
+        NSLog(@"Powered On");
+    } else {
+        NSLog(@"Powered Off");
+    }
+    
+}
+
+- (void) didReceiveData:(NSData *)sensorValueArray
+{
+    char sensorType;
+    [sensorValueArray getBytes:&sensorType range:NSMakeRange(0, 1)];
+    NSLog(@"got the data: %c", sensorType);
+    
+    Float32 tempdata1;
+     
+    //[self addTextToConsole:string isInput:YES];
+    //NSLog(@"Did receive data %@", string);
+     
+    [sensorValueArray getBytes:&sensorType range:NSMakeRange(0, 1)];
+    [sensorValueArray getBytes:&tempdata1 range:NSMakeRange(1, 4)];
+    
+    gotData = (Float32)(tempdata1);
+}
+
+
 -(void)setupThemes
 {
     [themePopUpButton addItemWithTitle:kThemeTableViewControllerDefaultTheme];
@@ -32,6 +63,9 @@ const CGFloat CPT_SPLIT_VIEW_MIN_LHS_WIDTH = 150.0;
 
     self.currentThemeName = kThemeTableViewControllerDefaultTheme;
     [themePopUpButton selectItemWithTitle:kThemeTableViewControllerDefaultTheme];
+    
+    self.cm = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
+    
 }
 
 -(void)awakeFromNib
@@ -120,6 +154,76 @@ const CGFloat CPT_SPLIT_VIEW_MIN_LHS_WIDTH = 150.0;
     self.currentThemeName = [sender titleOfSelectedItem];
     [plotItem renderInView:hostingView withTheme:[self currentTheme] animated:YES];
 }
+
+- (IBAction)searchBLE:(id)sender {    
+    switch (self.state) {
+        case IDLE:
+            self.state = SCANNING;
+            
+            NSLog(@"Started scan ...");
+            
+            [self.cm scanForPeripheralsWithServices:@[[UARTPeripheral serviceUUID]] options:@{CBCentralManagerScanOptionAllowDuplicatesKey: [NSNumber numberWithBool:NO]}];
+            break;
+            
+        case SCANNING:
+            self.state = IDLE;
+            NSLog(@"Stopped scan");
+            [self.cm stopScan];
+            break;
+            
+        case CONNECTED:
+            NSLog(@"Disconnect peripheral %@", self.currentPeripheral.peripheral.name);
+            [self.cm cancelPeripheralConnection:self.currentPeripheral.peripheral];
+            //self.sensorCount = 1;
+            /*
+             [[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString:[NSString stringWithFormat:@"http://127.0.0.1:3000/magneticreaders?note=%@&commit=Load", self.text2Send.stringValue]]];
+             break;
+             */
+    }
+}
+
+
+- (void) centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
+{
+    NSLog(@"Did discover peripheral %@", peripheral.name);
+    [self.cm stopScan];
+    
+    self.currentPeripheral = [[UARTPeripheral alloc] initWithPeripheral:peripheral delegate:self];
+    
+    [self.cm connectPeripheral:peripheral options:@{CBConnectPeripheralOptionNotifyOnDisconnectionKey: [NSNumber numberWithBool:YES]}];
+}
+
+- (void) centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral
+{
+    NSLog(@"Did connect peripheral %@", peripheral.name);
+    
+    //[self.statusLabel setStringValue: peripheral.name];
+    
+    self.state = CONNECTED;
+    //[self.searchBLE setTitle:@"Disconnect"];
+    
+    if ([self.currentPeripheral.peripheral isEqual:peripheral])
+    {
+        [self.currentPeripheral didConnect];
+    }
+}
+
+- (void) centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error
+{
+    NSLog(@"Did disconnect peripheral %@", peripheral.name);
+    
+    NSLog(@"Did disconnect from %@", peripheral.name);
+    
+    self.state = IDLE;
+    //[self.searchBLE setTitle:@"Connect"];
+    
+    if ([self.currentPeripheral.peripheral isEqual:peripheral])
+    {
+        [self.currentPeripheral didDisconnect];
+    }
+    
+}
+
 
 #pragma mark -
 #pragma mark PlotItem Property

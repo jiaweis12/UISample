@@ -52,7 +52,7 @@ NSString *const kFinancialPlots = @"Financial Plots";
         section                 = nil;
         title                   = nil;
     }
-
+    
     return self;
 }
 

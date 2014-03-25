@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <IOBluetooth/IOBluetooth.h>
+#import "UARTPeripheral.h"
 
 @protocol PlotViewDelegate<NSObject>
 

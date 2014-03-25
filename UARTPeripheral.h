@@ -9,14 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <IOBluetooth/IOBluetooth.h>
 
-typedef enum
-{
-    IDLE = 0,
-    SCANNING,
-    CONNECTED,
-} ConnectionState;
-// @class Track;
-
 @protocol UARTPeripheralDelegate
 - (void) didReceiveData:(NSData *) string;
 

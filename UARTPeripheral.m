@@ -56,7 +56,8 @@
 - (void) writeString:(NSString *) string
 {
     NSData *data = [NSData dataWithBytes:string.UTF8String length:string.length];
-    [self.peripheral writeValue:data forCharacteristic:self.txCharacteristic type:CBCharacteristicWriteWithResponse];
+    NSLog(@"I am here");
+    [self.peripheral writeValue:data forCharacteristic:self.txCharacteristic type:CBCharacteristicWriteWithoutResponse];
 }
 
 - (void) writeRawData:(NSData *) data
@@ -132,5 +133,24 @@
     }
 }
 
+
+- (void) peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
+{
+    
+    if (error)
+    {
+        NSLog(@"Error receiving notification for characteristic %@: %@", characteristic, error);
+        return;
+    }
+    
+    NSLog(@"Write data on a characteristic.");
+    
+    if (characteristic == self.txCharacteristic)
+    {
+        //NSString *string = [NSString stringWithUTF8String:[[characteristic value] bytes]];
+        //[self.delegate didReceiveData:[characteristic value]];
+        
+    }
+}
 
 @end

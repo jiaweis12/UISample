@@ -4,6 +4,7 @@
 //
 
 #import "RealTimePlot.h"
+#import "Header.h"
 
 static const double kFrameRate = 30.0;  // frames per second
 static const double kAlpha     = 0.8; // smoothing constant
@@ -12,6 +13,7 @@ static const NSUInteger kMaxDataPoints = 52;
 static NSString *const kPlotIdentifier = @"Data Source Plot";
 
 @implementation RealTimePlot
+
 
 +(void)load
 {
@@ -122,7 +124,7 @@ static NSString *const kPlotIdentifier = @"Data Source Plot";
     // Plot space
     CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)graph.defaultPlotSpace;
     plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromUnsignedInteger(0) length:CPTDecimalFromUnsignedInteger(kMaxDataPoints - 2)];
-    plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromUnsignedInteger(0) length:CPTDecimalFromUnsignedInteger(1)];
+    plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromUnsignedInteger(0) length:CPTDecimalFromUnsignedInteger(5)];
 
     [dataTimer invalidate];
 
@@ -172,7 +174,9 @@ static NSString *const kPlotIdentifier = @"Data Source Plot";
                      duration:CPTFloat(1.0 / kFrameRate)];
 
         currentIndex++;
-        [plotData addObject:[NSNumber numberWithDouble:(1.0 - kAlpha) * [[plotData lastObject] doubleValue] + kAlpha * rand() / (double)RAND_MAX]];
+        //[plotData addObject:[NSNumber numberWithDouble:(1.0 - kAlpha) * [[plotData lastObject] doubleValue] + kAlpha * rand() / (double)RAND_MAX]];
+        [plotData addObject:[NSNumber numberWithDouble:(1.0 - kAlpha) * [[plotData lastObject] doubleValue] + kAlpha * gotData / 500]];
+
         [thePlot insertDataAtIndex:plotData.count - 1 numberOfRecords:1];
     }
 }

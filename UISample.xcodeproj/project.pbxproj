@@ -23,9 +23,10 @@
 		BC00E6480FE1BF0A00DE81E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC00E6470FE1BF0A00DE81E0 /* QuartzCore.framework */; };
 		BCFD32AE0FEF08EA00A5B71C /* CorePlotIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BCFD32AD0FEF08EA00A5B71C /* CorePlotIcon.icns */; };
 		D720C91418DBD9D4003B49FE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D720C91318DBD9D4003B49FE /* Accelerate.framework */; };
+		DE51AA2218E1658900EC1079 /* UARTPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = DE51AA2118E1658900EC1079 /* UARTPeripheral.m */; };
+		DE51AA3318E17AA900EC1079 /* BLEDataTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = DE51AA3218E17AA900EC1079 /* BLEDataTracker.m */; };
 		DE87CC0C18E0224D007CE20B /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE87CC0B18E0224D007CE20B /* IOBluetooth.framework */; };
 		DE87CC0E18E02257007CE20B /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE87CC0D18E02257007CE20B /* IOBluetoothUI.framework */; };
-		DEEC103518E0826300ABA401 /* UARTPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEC103418E0826300ABA401 /* UARTPeripheral.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,10 +83,13 @@
 		BC93AAF50FDF3F0200606226 /* NSString+ParseCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ParseCSV.m"; sourceTree = "<group>"; };
 		BCFD32AD0FEF08EA00A5B71C /* CorePlotIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CorePlotIcon.icns; sourceTree = "<group>"; };
 		D720C91318DBD9D4003B49FE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		DE51AA2018E1658900EC1079 /* UARTPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UARTPeripheral.h; sourceTree = "<group>"; };
+		DE51AA2118E1658900EC1079 /* UARTPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UARTPeripheral.m; sourceTree = "<group>"; };
+		DE51AA3118E17AA900EC1079 /* BLEDataTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDataTracker.h; sourceTree = "<group>"; };
+		DE51AA3218E17AA900EC1079 /* BLEDataTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDataTracker.m; sourceTree = "<group>"; };
+		DE51AA3418E1819A00EC1079 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		DE87CC0B18E0224D007CE20B /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
 		DE87CC0D18E02257007CE20B /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
-		DEEC103318E0826300ABA401 /* UARTPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UARTPeripheral.h; sourceTree = "<group>"; };
-		DEEC103418E0826300ABA401 /* UARTPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UARTPeripheral.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,8 +155,8 @@
 		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DEEC103318E0826300ABA401 /* UARTPeripheral.h */,
-				DEEC103418E0826300ABA401 /* UARTPeripheral.m */,
+				DE51AA2018E1658900EC1079 /* UARTPeripheral.h */,
+				DE51AA2118E1658900EC1079 /* UARTPeripheral.m */,
 				9D46B01D18DCB7560077227D /* PlotController.h */,
 				9D46B01E18DCB7560077227D /* PlotController.m */,
 				9D46B01A18DCB5450077227D /* Plot_MacAppDelegate.h */,
@@ -167,6 +171,8 @@
 				9D46B00D18DC9E590077227D /* PlotItem.m */,
 				BC93AAF40FDF3F0200606226 /* NSString+ParseCSV.h */,
 				BC93AAF50FDF3F0200606226 /* NSString+ParseCSV.m */,
+				DE51AA3118E17AA900EC1079 /* BLEDataTracker.h */,
+				DE51AA3218E17AA900EC1079 /* BLEDataTracker.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -176,6 +182,7 @@
 			children = (
 				32DBCF750370BD2300C91783 /* UISample_Prefix.pch */,
 				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+				DE51AA3418E1819A00EC1079 /* Header.h */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -276,9 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D46B01918DCB3CA0077227D /* PlotView.m in Sources */,
-				DEEC103518E0826300ABA401 /* UARTPeripheral.m in Sources */,
+				DE51AA2218E1658900EC1079 /* UARTPeripheral.m in Sources */,
 				9D46B01118DC9E850077227D /* RealTimePlot.m in Sources */,
 				9D46B01F18DCB7560077227D /* PlotController.m in Sources */,
+				DE51AA3318E17AA900EC1079 /* BLEDataTracker.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				9D46B01418DC9F0A0077227D /* PlotGallery.m in Sources */,
 				9D46B00E18DC9E590077227D /* PlotItem.m in Sources */,

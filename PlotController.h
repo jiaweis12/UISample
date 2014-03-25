@@ -12,9 +12,18 @@
 
 #import "PlotGallery.h"
 #import "PlotView.h"
+#import "BLEDataTracker.h"
+
+typedef enum
+{
+    IDLE = 0,
+    SCANNING,
+    CONNECTED,
+} ConnectionState;
+// @class Track;
 
 @interface PlotController : NSObject</*NSSplitViewDelegate,*/
-                                            PlotViewDelegate>
+                                            PlotViewDelegate, CBCentralManagerDelegate, UARTPeripheralDelegate>
 {
     @private
 
@@ -30,7 +39,11 @@
 
 @property (nonatomic, strong) PlotItem *plotItem;
 @property (nonatomic, copy) NSString *currentThemeName;
+@property CBCentralManager *cm;
+@property ConnectionState state;
+@property UARTPeripheral *currentPeripheral;
 
 -(IBAction)themeSelectionDidChange:(id)sender;
+- (IBAction)searchBLE:(id)sender;
 
 @end
